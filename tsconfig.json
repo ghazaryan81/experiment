@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "declaration": true,
+    "module": "system",
+    "declarationDir": "dist",
+    "rootDir": "src",
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "types": [],
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "exclude": ["./node_modules"]
+}

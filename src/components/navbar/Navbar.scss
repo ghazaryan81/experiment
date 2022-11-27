@@ -1,0 +1,78 @@
+.navbar {
+  width: 100%;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 64px 19px;
+  white-space: pre;
+  &_logo {
+    width: 120px;
+    height: 35px;
+  }
+  &-items {
+    // font-size: 18px;
+    // font-size: 1.125em;
+    font-size: 1.25vw;
+    // font-size: 1.125rem;
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 2.778vw;
+    }
+    &_item a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &-basket {
+    position: relative;
+    margin-left: 5.278vw;
+    margin-right: 1.667vw;
+
+    &_icon {
+      background: none;
+      border: none;
+    }
+    &_quantity {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #fcb500;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 0.75em;
+      margin: auto;
+      color: black;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  // .navbar {
+  //   background-color: aqua;
+  // }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    background-color: rgb(145, 255, 0);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    background-color: rgb(132, 0, 255);
+    &-items {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    background-color: rgb(255, 0, 98);
+  }
+}

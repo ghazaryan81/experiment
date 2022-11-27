@@ -1,0 +1,14 @@
+.container {
+  margin-top: 6.9vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12vh;
+  .button {
+    background: #fcb500;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.25vw;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+}
