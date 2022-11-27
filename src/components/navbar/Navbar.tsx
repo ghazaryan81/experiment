@@ -1,16 +1,29 @@
+import { useState, useEffect } from "react";
 import "./Navbar.scss";
 import Logo from "../../assets/images/logo.svg";
-import basket from "../../assets/images/basket.svg";
-
+import Basket from "../../assets/images/basket.svg";
+import { ReactComponent as Hamburger } from "../../assets/images/hamburger.svg";
 const Navbar = ({ items }) => {
+  const [dropDown, dropDownSetCount] = useState(false);
+
+  // dropDownToggle
+  function dropDownToggle() {
+    dropDownSetCount(!dropDown);
+  }
+
   return (
     <header className="main-header">
       <div className="main-header__logo">
         <img src={Logo} alt="NOOTRIS" />
       </div>
-      <ul className="menu">
-        {items?.map((item) => (
-          <li className="menu__item">
+
+      <button className="main-header__hamburger-menu" onClick={dropDownToggle}>
+        <Hamburger />
+      </button>
+
+      <ul className={dropDown ? `menu display-block` : `menu`}>
+        {items?.map((item, index) => (
+          <li className="menu__item" key={index}>
             <a href="#" className="menu__item-link">
               {item}
             </a>
@@ -18,8 +31,8 @@ const Navbar = ({ items }) => {
         ))}
       </ul>
       <div className="main-header__basket">
-        <button className="main-header__icon">
-          <img src={basket} alt="basket" />
+        <button className="main-header__basket-btn">
+          <img src={Basket} alt="basket" />
         </button>
         <div className="main-header__quantity">1</div>
       </div>

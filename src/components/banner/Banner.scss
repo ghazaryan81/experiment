@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .banner {
   position: relative;
   padding: 0 64px;
@@ -16,12 +17,14 @@
     font-weight: 700;
     line-height: 1em;
   }
+
   h2 {
     font-weight: 700;
     font-size: 2.5vw;
     margin-bottom: 1.7vh;
   }
 
+  // .banner__description
   &__description {
     // .banner__description--1
     &--1 {

@@ -1,20 +1,18 @@
 import "./Section.scss";
 import Card from "./../card/Card";
 import ginger from "../../assets/images/ginger.svg";
-
 import corona from "../../assets/images/corona.svg";
-
 import nootris from "../../assets/images/nootris.svg";
 import { Button } from "../button";
 
 const Section = () => {
   return (
     <section className="section">
-      <h1 className="section_title">
+      <h3 className="section__title">
         ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
         <p>СО СКИДКОЙ -15% ПЕРВЫМ!</p>
-      </h1>
-      <div className="section_sale">
+      </h3>
+      <div className="section__sale">
         <del>750</del>
         <span>690</span>
       </div>
