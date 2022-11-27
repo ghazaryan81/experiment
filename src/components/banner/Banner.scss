@@ -21,18 +21,24 @@
     font-size: 2.5vw;
     margin-bottom: 1.7vh;
   }
-  .banner-about_1 {
-    font-weight: 400;
-    font-size: 1.667vw;
-    line-height: 3.02vh;
-    margin-bottom: 12.9vh;
+
+  &__description {
+    // .banner__description--1
+    &--1 {
+      font-weight: 400;
+      font-size: 1.667vw;
+      line-height: 3.02vh;
+      margin-bottom: 12.9vh;
+    }
+    // .banner__description--2
+    &--2 {
+      font-weight: 400;
+      font-size: 1.25vw;
+      line-height: 2.3vh;
+      padding-bottom: 10.3vh;
+    }
   }
-  .banner-about_2 {
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 2.3vh;
-    padding-bottom: 10.3vh;
-  }
+
   img {
     position: absolute;
     right: 0;
@@ -40,5 +46,7 @@
     max-width: 49vw;
     height: 100%;
     margin-right: 4.444vw;
+    object-fit: contain;
+    object-position: bottom right;
   }
 }

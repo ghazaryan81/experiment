@@ -9,7 +9,7 @@ import { Button } from "../button";
 
 const Section = () => {
   return (
-    <div className="section">
+    <section className="section">
       <h1 className="section_title">
         ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
         <p>СО СКИДКОЙ -15% ПЕРВЫМ!</p>
@@ -34,7 +34,7 @@ const Section = () => {
         />
       </div>
       <Button text="Оформить заказ!" />
-    </div>
+    </section>
   );
 };
 
