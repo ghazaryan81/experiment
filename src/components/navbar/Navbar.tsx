@@ -3,6 +3,7 @@ import "./Navbar.scss";
 import Logo from "../../assets/images/logo.svg";
 import Basket from "../../assets/images/basket.svg";
 import { ReactComponent as Hamburger } from "../../assets/images/hamburger.svg";
+
 const Navbar = ({ items }) => {
   const [dropDown, dropDownSetCount] = useState(false);
 
