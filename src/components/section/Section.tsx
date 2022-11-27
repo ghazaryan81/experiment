@@ -10,13 +10,13 @@ const Section = () => {
     <section className="section">
       <h3 className="section__title">
         ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
-        <p>СО СКИДКОЙ -15% ПЕРВЫМ!</p>
+        <span>СО СКИДКОЙ -15% ПЕРВЫМ!</span>
       </h3>
       <div className="section__sale">
         <del>750</del>
         <span>690</span>
       </div>
-      <div className="card">
+      <div className="card-list">
         <Card size="regular" src={ginger} text1="Содержит" text2="имбирь" />
         <Card
           size="large"

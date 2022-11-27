@@ -6,9 +6,10 @@
 .banner {
   position: relative;
   padding: 0 64px;
-  background-image: url("../../assets/images/background.png");
+  background-image: url("../../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 0;
 
   h1 {
     font-size: 10vw;
@@ -20,7 +21,7 @@
 
   h2 {
     font-weight: 700;
-    font-size: 2.5vw;
+    font-size: clamp(20px, 2.5vw, 36px);
     margin-bottom: 1.7vh;
   }
 
@@ -29,14 +30,14 @@
     // .banner__description--1
     &--1 {
       font-weight: 400;
-      font-size: 1.667vw;
+      font-size: clamp(13px, 1.667vw, 24px);
       line-height: 3.02vh;
       margin-bottom: 12.9vh;
     }
     // .banner__description--2
     &--2 {
       font-weight: 400;
-      font-size: 1.25vw;
+      font-size: clamp(13px, 1.25vw, 18px);
       line-height: 2.3vh;
       padding-bottom: 10.3vh;
     }
@@ -45,7 +46,7 @@
   img {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 82px;
     max-width: 49vw;
     height: 100%;
     margin-right: 4.444vw;

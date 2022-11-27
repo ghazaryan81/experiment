@@ -87,6 +87,10 @@
     display: flex !important;
   }
 
+  @media only screen and (max-width: 560px) {
+    left: 10% !important;
+  }
+
   @media only screen and (max-width: 920px) {
     display: none;
     position: absolute;

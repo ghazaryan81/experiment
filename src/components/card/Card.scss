@@ -1,28 +1,68 @@
-.card_regular {
-  font-size: 1.25vw;
-  line-height: 2.3vh;
-  text-align: center;
-
-  img {
-    width: 13.403vw;
-    height: 11.667vw;
-    margin-bottom: 8.42vh;
+// .card-list
+.card-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 59px;
+  @media only screen and (max-width: 730px) {
+    flex-direction: column;
   }
 }
 
-.card_large {
-  font-size: 1.667vw;
-  img {
-    width: 33.333vw;
-    height: 11.1vw;
-    margin-bottom: 4.85vh;
-  }
+// .card
+.card {
+  width: 100%;
+
+  // .card--regular .first-line
   .first-line {
-    font-size: 2.5vw;
+    font-size: 18px;
+    display: block;
   }
-  text-align: center;
-  margin: 0 7.7vw;
-}
-.colored {
-  color: #fcb500;
+
+  // .card--regular .colored
+  .colored {
+    font-size: 18px;
+    display: block;
+    color: #fcb500;
+  }
+
+  // .card--regular
+  &--regular {
+    font-size: 1.25vw;
+    text-align: center;
+
+    // .card--regular img
+    img {
+      width: 13.403vw;
+      height: 11.667vw;
+      margin-bottom: 8.42vh;
+    }
+  }
+
+  // .card--large .first-line
+  &--large {
+    text-align: center;
+    margin: 0 7.7vw;
+
+    @media only screen and (max-width: 730px) {
+      margin: 50px 0;
+    }
+
+    .first-line {
+      font-size: clamp(20px, 1.875vw, 36px);
+    }
+
+    .colored {
+      font-size: clamp(12px, 1.25vw, 24px);
+    }
+
+    img {
+      width: 33.333vw;
+      height: 11.1vw;
+      margin-bottom: 4.85vh;
+
+      @media only screen and (max-width: 730px) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

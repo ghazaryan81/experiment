@@ -7,7 +7,7 @@
     background: #fcb500;
     border-radius: 7px;
     border: none;
-    font-size: 1.25vw;
+    font-size: clamp(13px, 1.25vw, 18px);
     padding: 1rem 2rem;
     cursor: pointer;
   }
